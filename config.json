@@ -1,5 +1,8 @@
 {
-    "button_1_action": "",
-    "button_2_action": "",
-    "button_3_action": ""
+    "port": "/dev/ttyUSB0",
+    "actions":{
+        "button_1_action": "",
+        "button_2_action": "",
+        "button_3_action": ""
+    }
 }
