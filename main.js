@@ -14,3 +14,5 @@ port.on('data', (data) => {
     }
     mapper.parse(data);
 })
+
+console.log('Quickmap initilized')

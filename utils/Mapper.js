@@ -13,9 +13,9 @@ class Mapper{
 
     parse = (data) => {
         if(this.debugMode){
-            console.log(`${this.config.actions[data + '_action']}`);
+            console.log(`${this.config.binds[data]}`);
         }
-        exec(`${this.config.actions[data + '_action']} &`);
+        exec(`${this.config.binds[data]} &`);
     }
 
 }
