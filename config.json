@@ -2,8 +2,8 @@
     "port": "/dev/ttyUSB0",
     "binds":{
         "button_1": "code",
-        "button_2": "google-chrome-stable http://youtube.com",
-        "button_3": "google-chrome-stable http://pornhub.com"
+        "button_2": "google-chrome-stable",
+        "button_3": "teams"
     },
     "debug": true
 }
