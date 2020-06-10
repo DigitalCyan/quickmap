@@ -39,7 +39,7 @@ sudo chmod u+x run.sh
 ```
 
 ### The `run.sh` script
-The script will first check if you have the required node modules installed. If you don't and you happen to be running it as a standard user, you will be notified of your missing dependencies and asked for your sudo password. This will download the dependencies via `npm` and store them into the `node_modules` folder.
+The script will first check if you have the required node modules installed. If you don't and you happen to be running it as a standard user, you will be notified of your missing dependencies. This will download the dependencies via `npm` and store them into the `node_modules` folder.
 
 ### Configuration
 You may configure the software using a simple text editor and editing the `config.json` file at the root of the package.
