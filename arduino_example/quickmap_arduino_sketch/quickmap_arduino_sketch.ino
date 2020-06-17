@@ -1,9 +1,9 @@
 // Vars
-
 bool allow_input = true;
 
+// The setup
 void setup() {
-  // Input assignment
+  // Pin mode declaration
   for(int i = 2; i <= 4; i++){
     pinMode(i, INPUT);
   }
@@ -14,6 +14,10 @@ void setup() {
 
 void loop() {
   
+  // Check for input and send corresponding serial data
+  // Upon recieving input we write some data to the serial, note
+  // that the data is different for every button
+
   if(allow_input && digitalRead(2)){
     Serial.write("button_1");
     allow_input = false;
@@ -28,6 +32,8 @@ void loop() {
     Serial.write("button_3");
     allow_input = false;
   }
+
+  // Make sure the input control does it's job
 
   if(!digitalRead(2) && !digitalRead(3) && !digitalRead(4)){
     allow_input = true;
