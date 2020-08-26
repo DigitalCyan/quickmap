@@ -20,7 +20,7 @@ If you're not doing this as root, make sure that you are alloed to write and rea
 
 If your device is located on `/dev/ttyUSB0` (like in my case) command should be:
 ```
-sudo chmod u+rw /dev/ttyUSB0
+sudo chmod uo+rw /dev/ttyUSB0
 ```
 
 ### Dependencies
@@ -35,7 +35,7 @@ Now, there is a little script I wrote that should automate this process complete
 If you are unable to run it, make sure you have the permission to execute it. You can do so using `chmod`.
 
 ```
-sudo chmod u+x run.sh
+sudo chmod uo+x run.sh
 ```
 
 ### The `run.sh` script
